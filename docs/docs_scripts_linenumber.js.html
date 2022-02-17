@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: docs/scripts/linenumber.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,43 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: docs/scripts/linenumber.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*global document */
+(() => {
+    const source = document.getElementsByClassName('prettyprint source linenums');
+    let i = 0;
+    let lineNumber = 0;
+    let lineId;
+    let lines;
+    let totalLines;
+    let anchorHash;
 
+    if (source &amp;&amp; source[0]) {
+        anchorHash = document.location.hash.substring(1);
+        lines = source[0].getElementsByTagName('li');
+        totalLines = lines.length;
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+        for (; i &lt; totalLines; i++) {
+            lineNumber++;
+            lineId = `line${lineNumber}`;
+            lines[i].id = lineId;
+            if (lineId === anchorHash) {
+                lines[i].className += ' selected';
+            }
+        }
+    }
+})();
+</code></pre>
+        </article>
+    </section>
 
 
 

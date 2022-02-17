@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: src/background/methods/sound.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,57 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: src/background/methods/sound.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Plays audio of given HTML **audio** element
+ * @param {string} audioID ID of the HTML audio player element
+ */
+function playAudioByID(audioID) {
+    document.getElementById(audioID).play()
+}
 
+/**
+ * Pauses audio of given HTML **audio** element
+ * @param {string} audioID ID of the HTML audio player element
+ */
+function pauseAudioByID(audioID) {
+    document.getElementById(audioID).pause()
+}
 
-    <h3> </h3>
+/**
+ * Sets audio volume of given HTML audio element
+ * @param {string} audioID ID of the HTML audio player element
+ */
+function setAudioVolumeByID(audioID, volume) {
+    //0.0 - 1.0
+    document.getElementById(audioID).volume = volume
+}
 
+/**
+ * Toggles (Start/Stop) given HTML audio element
+ * @param {string} audioID ID of the HTML audio player element
+ */
+function audioOnOff(audioID) {
+    if (document.getElementById(audioID).paused) {
+        playAudioByID(audioID)
+    } else {
+        pause
+        pauseAudioByID(audioID)
+    }
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export { pauseAudioByID, playAudioByID, setAudioVolumeByID, audioOnOff }
+</code></pre>
+        </article>
+    </section>
 
 
 
