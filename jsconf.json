@@ -1,6 +1,8 @@
 {
   "plugins": [
-    "plugins/markdown"
+    "jsdoc-ts-utils",
+    "plugins/markdown",
+    "flow"
   ],
   "recurseDepth": 20,
   "source": {

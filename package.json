@@ -70,6 +70,7 @@
     "babel-loader": "8.1.0",
     "cypress": "9.1.1",
     "eslint-plugin-cypress": "2.12.1",
+    "flow": "^0.2.3",
     "husky": "7.0.4",
     "jsdoc": "^3.6.10",
     "jsdoc-ts-utils": "^2.0.1",
