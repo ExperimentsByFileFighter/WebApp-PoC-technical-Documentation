@@ -67,7 +67,7 @@ export const uploadPreflight = (
 }
 
 export const uploadFiles = (
-    files: File[] | EditableFileWithPreflightInfo[],
+    files: File[],
     parentFolderID: string
 ) => {
     console.log(

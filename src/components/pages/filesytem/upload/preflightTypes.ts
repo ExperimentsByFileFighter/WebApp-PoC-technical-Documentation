@@ -11,8 +11,10 @@ export type EditablePreflightEntityOrFile =
     | EditableFileWithPreflightInfo
     | EditablePreflightEntity
 
+// @ts-ignore
 export interface EditableFileWithPreflightInfo
-    extends File,
+    extends
+        File,
         EditableEntity,
         PreflightEntity {
     webkitRelativePath?: string

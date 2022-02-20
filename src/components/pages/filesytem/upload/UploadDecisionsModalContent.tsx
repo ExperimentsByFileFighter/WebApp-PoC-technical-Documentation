@@ -79,7 +79,7 @@ export const UploadDecisionsModalContent = ({
                 uploadFiles(
                     combined.filter(
                         (f: EditablePreflightEntityOrFile) => f.isFile
-                    ) as EditableFileWithPreflightInfo[],
+                    ) as File[],
                     fsItemIdToUpload
                 )
                 handleClose()
@@ -96,7 +96,7 @@ export const UploadDecisionsModalContent = ({
         uploadFiles(
             preflightResult.filter(
                 (f: EditablePreflightEntityOrFile) => f.isFile
-            ) as EditableFileWithPreflightInfo[],
+            ) as File[],
             fsItemIdToUpload
         )
         handleClose()
