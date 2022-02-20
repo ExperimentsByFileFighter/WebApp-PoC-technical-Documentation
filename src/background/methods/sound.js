@@ -17,7 +17,7 @@ function pauseAudioByID(audioID) {
 /**
  * Sets audio volume of given HTML audio element
  * @param {string} audioID ID of the HTML audio player element
- * @param {string} volume new volume in between 0.0 to 1.0
+ * @param {number} volume new volume in between 0.0 to 1.0
  */
 function setAudioVolumeByID(audioID, volume) {
     //0.0 - 1.0
