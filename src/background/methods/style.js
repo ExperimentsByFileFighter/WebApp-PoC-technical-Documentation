@@ -1,6 +1,6 @@
 /**
  * Extracts value of given CSS property of given HTML element
- * @param {HTMLElement} element Element whose style value is to be extracted
+ * @param {HTMLElement | null} element Element whose style value is to be extracted
  * @param {string} strCssRule Requested CSS property
  * @returns {string} Value of the element property
  */
