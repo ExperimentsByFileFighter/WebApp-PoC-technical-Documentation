@@ -4,6 +4,12 @@ import sha256 from "./sha256"
 
 const salt = "FileFighterWithSomeSalt"
 
+/**
+ * Hashes String using sha265 algorithm
+ * @async
+ * @param {string} password Contains password that shall be hashed
+ * @return returns hashed password
+ */
 async function hashPassword(password: string) {
     if (!crypto.subtle) {
         return sha256(password + salt)?.toUpperCase()
