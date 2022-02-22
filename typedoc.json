@@ -1,4 +1,10 @@
 {
-  "entryPoints": ["src/index.tsx"],
-  "out": "docs"
+  "tsconfig": "tsconfig.json",
+  "includes": "src",
+  "out": "docs",
+  "readme": "README.md",
+  "entryPointStrategy": "Expand",
+  "entryPoints": [
+    "./src"
+  ]
 }

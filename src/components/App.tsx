@@ -45,6 +45,11 @@ type PropsFromRedux = ConnectedProps<typeof connector>
 // this defines the component props and also adds the redux imported props
 type Props = PropsFromRedux
 
+/**
+ * @component Test
+ * @param props props
+ * @returns {JSX.Element} react node element
+ */
 function App(props: Props): ReactElement {
     console.log(
         "[App] props.tokens: ",

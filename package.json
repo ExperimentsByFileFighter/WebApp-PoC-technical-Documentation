@@ -39,7 +39,11 @@
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll",
     "sonar": "SONAR_LOGIN=$SONAR_LOGIN SONAR_PASSWORD=$SONAR_PASSWORD node src/sonar-scanner.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typings": "tsc",
+    "docs:dev": "typedoc",
+    "docs": "npm run typings && npm run docs:dev",
+    "clear:ts": "rm -rf docs dist ts-declaration"
   },
   "eslintConfig": {
     "extends": "react-app"
