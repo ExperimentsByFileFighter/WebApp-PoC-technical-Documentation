@@ -14,5 +14,6 @@
   "entryPointStrategy": "Expand",
   "entryPoints": [
     "./src"
-  ]
+  ],
+  "categorizeByGroup": true
 }

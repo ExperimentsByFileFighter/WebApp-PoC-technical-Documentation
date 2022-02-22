@@ -55,7 +55,11 @@ const DropdownItemDownload = (props: DropdownItemTitleInterface) => {
     )
 }
 
-function FileItemContextMenu(props: FileItemContextMenuInterface) {
+/**
+ * @category FileSystem
+ * @param props the FileSystem Entity
+ */
+export function FileItemContextMenu(props: FileItemContextMenuInterface) {
     const deleteAction = useCallback(
         () => deleteFsEntities([props.fsEntity]),
         [props.fsEntity]
