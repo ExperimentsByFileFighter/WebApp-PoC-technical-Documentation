@@ -29,7 +29,13 @@ const connector = connect(mapState)
 
 type PropsFromRedux = ConnectedProps<typeof connector>
 
-function Header(props: PropsFromRedux): ReactElement {
+
+/**
+ * @component
+ * Contains the NavBar
+ * @param props extracted from Redux
+ */
+export function Header(props: PropsFromRedux): ReactElement {
     const navigate = useNavigate()
     const navBarElements: navBarElement_Interface[] = [
         {
