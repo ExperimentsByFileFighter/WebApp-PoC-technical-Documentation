@@ -15,5 +15,6 @@
   "entryPoints": [
     "./src"
   ],
-  "categorizeByGroup": true
+  "categorizeByGroup": true,
+  "theme": "beautab"
 }
