@@ -1,5 +1,5 @@
 /**
- * Interface describing the standart return value of the backend
+ * Interface describing the standard return value of the backend
  */
 // FIXME implement it if needed.
 export interface ApiStatusResponse {
