@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>webapp_frontend 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>webapp_frontend</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#playaudiobyid'
+                  class="">
+                  playAudioByID
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pauseaudiobyid'
+                  class="">
+                  pauseAudioByID
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setaudiovolumebyid'
+                  class="">
+                  setAudioVolumeByID
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#audioonoff'
+                  class="">
+                  audioOnOff
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getstylevalue'
+                  class="">
+                  getStyleValue
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='playaudiobyid'>
+      playAudioByID
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/c7ed452b88a01fb71164d13cd05816619c59cbbb/src/background/methods/sound.js#L5-L7'>
+      <span>src/background/methods/sound.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Plays audio of given HTML <strong>audio</strong> element</p>
+
+    <div class='pre p1 fill-light mt0'>playAudioByID(audioID: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>audioID</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    ID of the HTML audio player element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pauseaudiobyid'>
+      pauseAudioByID
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/c7ed452b88a01fb71164d13cd05816619c59cbbb/src/background/methods/sound.js#L13-L15'>
+      <span>src/background/methods/sound.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Pauses audio of given HTML <strong>audio</strong> element</p>
+
+    <div class='pre p1 fill-light mt0'>pauseAudioByID(audioID: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>audioID</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    ID of the HTML audio player element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setaudiovolumebyid'>
+      setAudioVolumeByID
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/c7ed452b88a01fb71164d13cd05816619c59cbbb/src/background/methods/sound.js#L22-L25'>
+      <span>src/background/methods/sound.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Sets audio volume of given HTML audio element</p>
+
+    <div class='pre p1 fill-light mt0'>setAudioVolumeByID(audioID: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, volume: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>audioID</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    ID of the HTML audio player element
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>volume</span> <code class='quiet'>(any)</code>
+	    The volume to set the audio to.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='audioonoff'>
+      audioOnOff
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/c7ed452b88a01fb71164d13cd05816619c59cbbb/src/background/methods/sound.js#L31-L37'>
+      <span>src/background/methods/sound.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Toggles (Start/Stop) given HTML audio element</p>
+
+    <div class='pre p1 fill-light mt0'>audioOnOff(audioID: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>audioID</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    ID of the HTML audio player element
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getstylevalue'>
+      getStyleValue
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/c7ed452b88a01fb71164d13cd05816619c59cbbb/src/background/methods/style.js#L7-L21'>
+      <span>src/background/methods/style.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Get the value of a CSS property of an element</p>
+
+    <div class='pre p1 fill-light mt0'>getStyleValue(element: any, strCssRule: any): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>element</span> <code class='quiet'>(any)</code>
+	    The element to get the style from.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>strCssRule</span> <code class='quiet'>(any)</code>
+	    The CSS rule you want to get the value of.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        The value of the css property.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

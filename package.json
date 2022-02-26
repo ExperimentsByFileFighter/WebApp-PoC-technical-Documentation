@@ -39,7 +39,9 @@
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll",
     "sonar": "SONAR_LOGIN=$SONAR_LOGIN SONAR_PASSWORD=$SONAR_PASSWORD node src/sonar-scanner.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docs:lint": "documentation lint src/",
+    "docs": "documentation build src/ -f html --github -o docs"
   },
   "eslintConfig": {
     "extends": "react-app"
