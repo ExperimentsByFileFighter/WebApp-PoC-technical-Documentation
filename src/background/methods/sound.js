@@ -31,7 +31,6 @@ function audioOnOff(audioID) {
     if (document.getElementById(audioID).paused) {
         playAudioByID(audioID)
     } else {
-        pause
         pauseAudioByID(audioID)
     }
 }

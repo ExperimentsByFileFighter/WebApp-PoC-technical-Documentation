@@ -8,7 +8,7 @@ const salt = "FileFighterWithSomeSalt"
  * Hashes String using sha265 algorithm
  * @async
  * @param {string} password Contains password that shall be hashed
- * @return returnes hashed password
+ * @return returns hashed password
  */
 async function hashPassword(password: string) {
     if (!crypto.subtle) {
