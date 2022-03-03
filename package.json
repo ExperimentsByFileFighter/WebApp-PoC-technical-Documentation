@@ -73,7 +73,6 @@
     "flow": "^0.2.3",
     "husky": "7.0.4",
     "jsdoc": "^3.6.10",
-    "jsdoc-ts-utils": "^2.0.1",
     "npm-check-updates": "12.0.5",
     "prettier": "2.5.1",
     "rc-util": "5.16.1",
