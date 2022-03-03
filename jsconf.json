@@ -1,8 +1,7 @@
 {
   "plugins": [
     "jsdoc-ts-utils",
-    "plugins/markdown",
-    "flow"
+    "plugins/markdown"
   ],
   "recurseDepth": 20,
   "source": {
@@ -26,5 +25,15 @@
   "opts": {
     "destination": "./docs/",
     "recurse": true
+  },
+  "tsUtils": {
+    "typedefImports": true,
+    "typeOfTypes": false,
+    "extendTypes": true,
+    "modulesOnMemberOf": true,
+    "modulesTypesShortName": true,
+    "parentTag": true,
+    "typeScriptUtilityTypes": true,
+    "tagsReplacement": {}
   }
 }
