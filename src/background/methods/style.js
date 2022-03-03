@@ -1,8 +1,8 @@
 /**
- * Extracts value of given CSS property of given HTML element
- * @param {HTMLElement} element Element whose style value is to be extracted
- * @param {string} strCssRule Requested CSS property
- * @returns {string} Value of the element property
+ * Get the value of a CSS property of an element
+ * @param {HTMLElement} element - The element to get the style from.
+ * @param {string} strCssRule - The CSS rule you want to get the value of.
+ * @returns {string} The value of the css property.
  */
 export function getStyleValue(element, strCssRule) {
     //https://stackoverflow.com/questions/5227909/how-to-get-an-elements-padding-value-using-javascript
