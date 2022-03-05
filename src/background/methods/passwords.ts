@@ -5,7 +5,7 @@ import sha256 from "./sha256"
 const salt = "FileFighterWithSomeSalt"
 
 /**
- * It hashes the password using the SHA-256 algorithm.
+ * Hashes a password using the SHA-256 algorithm.
  * @param password - The password to hash.
  * @returns {string} The hash of the password.
  * @example
