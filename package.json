@@ -44,7 +44,7 @@
     "docs": "documentation build src/ -f html --github -o docs",
     "docs:ts-error": "documentation build src/ --parse-extension ts -f html --github -o docs",
     "docs:ts2-error": "documentation build src/ --parse-extension ts --parse-extension ts --require-extension d.ts -f html --github -o docs",
-    "docs:ts": "documentation build src/ --parse-extension ts --parse-extension tex --require-extension ts --require-extension tsx --require-extension d.ts -f html --github -o docs"
+    "docs:ts": "documentation build src/ --parse-extension ts --parse-extension tsx --require-extension ts --require-extension tsx --require-extension d.ts -f html --github -o docs"
   },
   "eslintConfig": {
     "extends": "react-app"
