@@ -38,6 +38,26 @@
               
                 
                 <li><a
+                  href='#getcookie'
+                  class="">
+                  getCookie
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setcookie'
+                  class="">
+                  setCookie
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#hashpassword'
                   class="">
                   hashPassword
@@ -116,7 +136,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/api/sharedApiTypes.ts#L5-L8'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/api/sharedApiTypes.ts#L5-L8'>
       <span>src/background/api/sharedApiTypes.ts</span>
       </a>
     
@@ -165,12 +185,174 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='getcookie'>
+      getCookie
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/cookies.ts#L6-L20'>
+      <span>src/background/methods/cookies.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Given a cookie name, return the value of the cookie</p>
+
+    <div class='pre p1 fill-light mt0'>getCookie(cname: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cname</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The name of the cookie to retrieve.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        The value of the cookie.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setcookie'>
+      setCookie
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/cookies.ts#L28-L33'>
+      <span>src/background/methods/cookies.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Set a cookie with a value and an expiration date</p>
+
+    <div class='pre p1 fill-light mt0'>setCookie(cname: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, cValue: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, exDays: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cname</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The name of the cookie.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cValue</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The value of the cookie.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>exDays</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    The number of days the cookie will be valid.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='hashpassword'>
       hashPassword
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/passwords.ts#L16-L28'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/passwords.ts#L16-L28'>
       <span>src/background/methods/passwords.ts</span>
       </a>
     
@@ -253,7 +435,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/sound.js#L5-L7'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/sound.js#L5-L7'>
       <span>src/background/methods/sound.js</span>
       </a>
     
@@ -321,7 +503,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/sound.js#L15-L17'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/sound.js#L15-L17'>
       <span>src/background/methods/sound.js</span>
       </a>
     
@@ -395,7 +577,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/sound.js#L24-L27'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/sound.js#L24-L27'>
       <span>src/background/methods/sound.js</span>
       </a>
     
@@ -472,7 +654,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/sound.js#L33-L39'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/sound.js#L33-L39'>
       <span>src/background/methods/sound.js</span>
       </a>
     
@@ -540,7 +722,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/4d62eac710a9df9031815ac5642776b4e712de55/src/background/methods/style.js#L7-L21'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ExperimentsByFileFighter/WebApp-PoC-technical-Documentation/blob/62b186dd9727eaacbf1a54e4f05b0e4a423cb320/src/background/methods/style.js#L7-L21'>
       <span>src/background/methods/style.js</span>
       </a>
     
