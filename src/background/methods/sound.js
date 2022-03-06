@@ -8,7 +8,11 @@ function playAudioByID(audioID) {
 
 /**
  * Pauses audio of given HTML **audio** element
+ * Pauses audio of given HTML **audio** element
  * @param {string} audioID ID of the HTML audio player element
+ * @param {string} audioID ID of the HTML audio player element
+ * @example
+ * pauseAudioByID("dune_OST_player");
  */
 function pauseAudioByID(audioID) {
     document.getElementById(audioID).pause()
