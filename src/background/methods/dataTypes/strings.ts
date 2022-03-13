@@ -1,6 +1,5 @@
 export function reverseString(string: string): string {
-    if (string === "") return ""
-    else return reverseString(string.substr(1)) + string.charAt(0)
+    return string === "" ? string : reverseString(string.substr(1)) + string.charAt(0);
 }
 
 export function stringReplaceSubstringOneTimeFromBeginningAndEnd(
