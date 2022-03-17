@@ -22,3 +22,11 @@ const redirect = (
 }
 
 export { redirect, scrollToElement }
+
+/**
+ * @typeParam T blabla
+ * @param text
+ */
+function test<T>(target: T, text: string):number{
+    return 0
+}
