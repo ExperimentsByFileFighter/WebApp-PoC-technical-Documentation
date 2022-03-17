@@ -8,7 +8,7 @@ function playAudioByID(audioID) {
 
 /**
  * Pauses audio of given HTML **audio** element
- * @param {string} audioID ID of the HTML audio player element
+ * @param {string} audioID ID of the HTML **audio** player element
  * @example
  * pauseAudioByID("dune_OST_player");
  */
@@ -18,7 +18,7 @@ function pauseAudioByID(audioID) {
 
 /**
  * Sets audio volume of given HTML **audio** element
- * @param {string} audioID ID of the HTML audio player element
+ * @param {string} audioID ID of the HTML **audio** player element
  * @param volume - The volume to set the audio to.
  */
 function setAudioVolumeByID(audioID, volume) {
@@ -27,8 +27,10 @@ function setAudioVolumeByID(audioID, volume) {
 }
 
 /**
+ * # Test
  * Toggles (Start/Stop) given HTML **audio** element
- * @param {string} audioID ID of the HTML audio player element
+ * ## Param
+ * @param {string} audioID ID of the HTML **audio** player element
  */
 function audioOnOff(audioID) {
     if (document.getElementById(audioID).paused) {
