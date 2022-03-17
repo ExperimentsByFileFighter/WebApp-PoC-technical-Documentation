@@ -27,9 +27,12 @@ function setAudioVolumeByID(audioID, volume) {
 }
 
 /**
- * # Test
+ * ## Description
  * Toggles (Start/Stop) given HTML **audio** element
- * ## Param
+ * ## Usage
+ * This function is used by:
+ * - the FF-MusicController
+ * ## Function
  * @param {string} audioID ID of the HTML **audio** player element
  */
 function audioOnOff(audioID) {
