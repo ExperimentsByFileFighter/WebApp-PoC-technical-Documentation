@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap"
 /**
  * Props for Error 400 page
  */
-interface Props {
+export interface Props {
     needsLogin?: boolean
 }
 
